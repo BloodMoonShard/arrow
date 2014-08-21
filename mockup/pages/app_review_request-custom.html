@@ -1,0 +1,209 @@
+<script>window.document.title="PromoArrow - App review request to custom sites";</script>
+<section class="block-cont g-wrap">
+	<div class="cont-app_request wrap lang_step-add">
+		<h3>App review request to custom sites</h3>
+		<div class="app_request-steps">
+			<div class="inline-wrap clearfix">
+				<li class="i1 active" data-step="1">
+					<i>1</i>
+					<b><span>Choose</span></b>
+				</li>
+				<li class="i1" data-step="2">
+					<i>2</i>
+					<b><span>Contact info</span></b>
+				</li>
+				<li class="i2" data-step="3">
+					<i>3</i>
+					<b><span>App info</span></b>
+				</li>
+				<li class="i3" data-step="4">
+					<i>4</i>
+					<b><span>Finish</span></b>
+				</li>
+			</div>
+		</div>
+		<div class="app_request-frames">
+			<div class="frame_one active" data-step="1" style="display:block;">
+				<div class="cont-request_lang">
+					<h5>Please choose the languages of the sites to review request:</h5>
+					<div class="lang_table">
+						<input type="hidden" name="langs" value="" />
+						<div class="table_body">
+							<div class="table_row clearfix">
+								<div class="lang">
+									<input type="checkbox" name="langes" id="al-id1" value="English" />
+									<span></span>
+									<label for="al-id1">English</label>
+								</div>
+								<div class="sites">249 sites</div>
+								<div class="price">$50</div>
+							</div>
+							<div class="table_row clearfix">
+								<div class="lang">
+									<input type="checkbox" name="langes" id="al-id2" value="German" />
+									<span></span>
+									<label for="al-id2">German</label>
+								</div>
+								<div class="sites">69 sites</div>
+								<div class="price">$26</div>
+							</div>
+							<div class="table_row clearfix">
+								<div class="lang">
+									<input type="checkbox" name="langes" id="al-id3" value="Russian" />
+									<span></span>
+									<label for="al-id3">Russian</label>
+								</div>
+								<div class="sites">48 sites</div>
+								<div class="price">$20</div>
+							</div>
+							<div class="table_row clearfix">
+								<div class="lang">
+									<input type="checkbox" name="langes" id="al-id3" value="Spanish" />
+									<span></span>
+									<label for="al-id3">Spanish</label>
+								</div>
+								<div class="sites">12 sites</div>
+								<div class="price">$6</div>
+							</div>
+						</div>
+						<div class="lang_table-total clearfix">
+							<div class="sites">48 sites</div>
+							<div class="price">$20</div>
+						</div>
+					</div>
+					<div class="lang_next-btn">
+						<a href="#next" onclick="main.next_lang(); return false;">next step →</a>
+					</div>
+					<script>main.init_lang();</script>
+				</div>
+			</div>
+			<div class="frame_one" data-step="2">
+				<div class="cont-request_form">
+					<form action="/" onsubmit="main.request_app('app_info', this); return false;" autocomplete="off">
+						<div class="form_line">
+							<input type="text" name="name" placeholder="Name" required="">
+						</div>
+						<div class="form_line">
+							<input type="email" name="email" placeholder="Email" required="">
+						</div>
+						<div class="form_line">
+							<input type="url" name="itunes" placeholder="iTunes link" required="">
+						</div>
+						<div class="form_desc">* Information for contact forms on review sites</div>
+						<div class="form_btn">
+								<input type="submit" value="next step →">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="frame_one" data-step="3">
+				<div class="cont-app_info">
+					<div class="info clearfix">
+						<div class="app_col">
+							<div class="image"></div>
+							<div class="price">Loading</div>
+							<div class="category"><b>Category: </b> <a href="#" target="_blank" title="Loading">Loading</a></div>
+							<div class="rating">
+								<div class="inline-wrap clearfix">
+									<div class="stars">
+										<span data-rating="0"></span>
+									</div>
+									<div class="user">Ratings: <i>Loading</i></div>
+								</div>
+							</div>
+						</div>
+						<div class="note-col">
+							<div class="note-col_line">
+								<textarea name="app-doit" placeholder="In one sentence, what does your app do?" style="height:23px;"></textarea>
+							</div>
+							<div class="note-col_line">
+								<textarea name="app-ucoms" placeholder="If you would like to say something please do it here" style="height:23px;"></textarea>
+							</div>
+							<div class="uwant_coms">
+								<h5>Your app has <i>4,5</i> stars. Do you want to <b>improve</b> it?<br/> We leave 3-5 positive comments a day in US AppStore.</h5>
+								<div class="select_radio">
+									<div class="radio_line" data-coms="10">
+										<input type="radio" name="app-coms" id="app_c1" value="10 positive comments $50" />
+										<span></span>
+										<label for="app_c1">10 positive comments <b>$50</b></label>
+									</div>
+									<div class="radio_line" data-coms="20">
+										<input type="radio" name="app-coms" id="app_c2" value="20 positive comments $100" />
+										<span></span>
+										<label for="app_c2">20 positive comments <b>$100</b></label>
+									</div>
+									<div class="radio_line" data-coms="30">
+										<input type="radio" name="app-coms" id="app_c3" value="30 positive comments $150" />
+										<span></span>
+										<label for="app_c3">30 positive comments <b>$150</b></label>
+									</div>
+									<div class="radio_line">
+										<input type="radio" name="app-coms" id="app_c4" value="I do not want positive comments" />
+										<span></span>
+										<label for="app_c4">I do not want positive comments</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step_buttons">
+						<div class="inline-wrap clearfix">
+							<a href="#back" class="back" onclick="main.change_step(-1); return false;">← back</a>
+							<a href="#finish" class="next" onclick="main.to_finish(); return false;">finish →</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="frame_one" data-step="4">
+				<div class="cont-app_finish">
+					<div class="finish_checkout">
+						<div class="checkout_block">
+							<h5>Your order:</h5>
+							<div class="checkout_line clearfix" data-type="requests">
+								<div class="name"><i>1</i> App review request</div>
+								<div class="line"></div>
+								<div class="price">$89</div>
+							</div>
+							<div class="checkout_line clearfix" data-type="comments">
+								<div class="name"><i>2</i> <b>10</b> comments</div>
+								<div class="line"></div>
+								<div class="price">$50</div>
+							</div>
+							<div class="total_line">$139</div>
+						</div>
+					</div>
+					<div class="finish_cols clearfix">
+						<div class="paypal_checkout">
+							<img src="/img/paypal.png" />
+						</div>
+						<div class="finish_next">
+							<div class="item" data-type="requests">
+								<h6>Whats next with requests?</h6>
+								<ul>
+									<li><i>1.</i> We create a text of request and well designed html email.</li>
+									<li><i>2.</i> We send it to you and wait for your approval.</li>
+									<li><i>3.</i> We do the mailing within 72 hours.</li>
+								</ul>
+							</div>
+							<div class="item" data-type="comments">
+								<h6>Whats next with comments?</h6>
+								<ul>
+									<li><i>1.</i> We create a text of request and well designed html email.</li>
+								</ul>
+							</div>
+							<div class="contacts">
+								<h4>If you have any questions please contact us:</h4>
+								<div class="block-head_cont">
+									<span class="lc i1">contact@promoarrow.com</span>
+									<span class="lc i2">promoarrow</span>
+									<span class="lc i3">+7 916 526 88 07</span>
+									<span class="ld">Call us from 7am to 7pm London time workdays</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
